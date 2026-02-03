@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>TaskFlow</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+
+<body class="min-h-screen flex items-center justify-center bg-gray-100 dark:bg-gray-900 transition">
+
+  <div class="w-[380px] bg-white dark:bg-gray-800 p-6 rounded-xl shadow-xl">
+
+    <div class="flex justify-between items-center mb-4">
+      <h2 class="text-2xl font-bold text-gray-800 dark:text-white">
+        TaskFlow ⏰
+      </h2>
+
+      <button onclick="toggleDarkMode()"
+        class="text-sm px-3 py-1 rounded bg-gray-200 dark:bg-gray-700 dark:text-white">
+        🌙
+      </button>
+    </div>
+
+    <div class="flex flex-col gap-2 mb-4">
+      <input
+        type="text"
+        class="textbox px-4 py-2 border rounded-lg outline-none"
+        placeholder="Enter task"
+      />
+
+      <div class="flex gap-2">
+        <input type="date" class="date px-3 py-2 border rounded-lg flex-1" />
+        <input type="time" class="time px-3 py-2 border rounded-lg flex-1" />
+      </div>
+
+      <button
+        class="btn bg-blue-500 hover:bg-blue-600 text-white py-2 rounded-lg"
+        onclick="btnclick()"
+      >
+        <span class="para">Add Task</span>
+      </button>
+    </div>
+
+    <div class="body space-y-2"></div>
+  </div>
+
+  <audio id="alarmSound" src="alarm.mp3"></audio>
+
+  <script src="todo.js"></script>
+</body>
+</html>
