@@ -1,2 +1,1 @@
-# taskflow
- A task reminder app built with HTML, JavaScript, and Tailwind CSS using browser notifications.
+A modern task reminder application built using HTML, JavaScript, and Tailwind CSS with browser notifications and dark mode.
